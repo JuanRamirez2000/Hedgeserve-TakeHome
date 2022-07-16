@@ -1,0 +1,54 @@
+.calculator {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* The Calculator Screen*/
+#calculator-screen {
+    width: 100%;
+}
+
+/* The Calculator's math operators */
+.calculator-math {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    margin: 1em;
+    gap: 1em;
+}
+
+.calculator-math>button {
+    flex-grow: 1;
+}
+
+/* The Calculator's digits */
+.calculator-digits {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+
+    margin: 1em;
+    gap: 1em 1em;
+}
+
+/* The Calculator's other operators */
+.calculator-operators {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    margin: 1em;
+    gap: 1em;
+}
+
+.calculator-operators > button {
+    flex-grow: 1;
+}

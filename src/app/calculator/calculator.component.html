@@ -1,0 +1,38 @@
+<div class="calculator">
+    <input type="text" id="calculator-screen" value={{this.input}} disabled>
+
+    <div class="calculator-body">
+        <!-- Calculator Operations -->
+        <div class="calculator-math">
+            <button class="calculator-button" id="plus-operator" (click)="pressKey('+')"> + </button>
+            <button class="calculator-button" id="min-operator" (click)="pressKey('-')"> - </button>
+            <button class="calculator-button" id="mult-operator" (click)="pressKey('*')"> * </button>
+            <button class="calculator-button" id="div-operator" (click)="pressKey('/')"> / </button>
+        </div>
+
+        <!-- Calculator digits -->
+        <div class="calculator-digits">
+            <button class="calculator-button calculator-digit" (click)="pressKey('7')"> 7 </button>
+            <button class="calculator-button calculator-digit" (click)="pressKey('8')"> 8 </button>
+            <button class="calculator-button calculator-digit" (click)="pressKey('9')"> 9 </button>
+            
+            <button class="calculator-button calculator-digit" (click)="pressKey('4')"> 4 </button>
+            <button class="calculator-button calculator-digit" (click)="pressKey('5')"> 5 </button>
+            <button class="calculator-button calculator-digit" (click)="pressKey('6')"> 6 </button>
+            
+            <button class="calculator-button calculator-digit" (click)="pressKey('1')"> 1 </button>
+            <button class="calculator-button calculator-digit" (click)="pressKey('2')"> 2 </button>
+            <button class="calculator-button calculator-digit" (click)="pressKey('3')"> 3 </button>
+            
+            <button class="calculator-button calculator-digit" (click)="pressKey('0')"> 0 </button>
+            <button class="calculator-button" id="decimal" (click)="pressKey('.')"> . </button>
+            <button class="calculator-button" id="clear-button" (click)="clearCalculator()"> Clear </button>
+        </div>
+
+        <!-- Calculator Functions-->
+        <div class="calculator-operators" >
+            <button class="calculator-button " id="backspace-button"(click)="pressBack()"> Back </button>
+            <button class="calculator-button " id="eq-operator" (click)="pressEval()"> = </button>
+        </div>
+    </div>
+</div>
