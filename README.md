@@ -20,4 +20,22 @@ The task at hand was to create a simple calculator using Angular with these rest
 
 These are the features currently implemented in the app
 
-- 
+- Basic calculator functions such as:
+    - Addition
+    - Subtraction
+    - Multiplication
+    - Division
+
+- NodeJS + ExpressJS backend to handle calculations
+
+## How to run
+
+### Before running app
+
+1. Insure that all npm packages required are installed by running `npm install` within the `/api` and root directories
+### Once all packages are installed
+
+1. Using the npm script within the root directory run `ng serve` (or do `npm run start`)
+
+2. Using the npm script within `/api` run `nodemon ./index.ts` (or do `npm run start`)
+
